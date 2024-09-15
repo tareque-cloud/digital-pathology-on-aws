@@ -104,7 +104,7 @@ There are [two primary ways to land image data into EFS file share](https://docs
 ## Transfer Image Data using Storage Gateway
 If you have huge amount of data and I/O performance is not critical, you can save the image files on Amazon S3 and deploy a S3 filegateway on Amazon EC2 to cache a subset of files, and mount a NFS file share instead of Amazon EFS volume to OMERO server. Although Amazon S3 cost significantly less than Amazon EFS, the file gateway instance does have the extra cost. 
 
-<img src="Figures/storagegateway.jpg" width="500">
+<img src="Figures/s3storagegateway.png" width="500">
 
 ----
 ## Cost Estimate for Storage
